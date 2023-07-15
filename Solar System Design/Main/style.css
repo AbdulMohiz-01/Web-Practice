@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-image: url("../assests/pics/stars.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+header{
+    z-index: 2;
+    background-color: rgba(128, 128, 128, 0.219);
+}
+.heading{
+    position: relative;
+    color: rgba(245, 245, 245, 0.774);
+    font-family: PT Sans Narrow;
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 50;
+    text-align: center;
+    letter-spacing: 30px;
+    word-spacing: 60px;
+    
+    
+}
+/* .container{
+    text-align: center;
+} */
+#sun{
+    
+    left: 45%;
+    position: absolute;
+    top: 40%;
+}
+#venus{
+    left: 47%;
+    position: absolute;
+    top: 45%;
+    animation: venusOrbit 4.5s linear infinite;
+}
+#earth {
+    left: 45%;
+    position: absolute;
+    top: 40%;
+    animation: earthOrbit 8s linear infinite;
+   }
+#jupiter{
+    left: 45%;
+    position: absolute;
+    top: 40%;
+    animation: jupiterOrbit 12s linear infinite;
+}
+#saturn{
+    /* z-index: 1; */
+    left: 45%;
+    position: absolute;
+    top: 40%;
+    animation: saturnOrbit 16s linear infinite;
+}
+
+@keyframes venusOrbit {
+    from { transform: rotate(0deg) translateX(50px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(50px) rotate(-360deg); }
+}
+
+@keyframes saturnOrbit {
+    from { transform: rotate(0deg) translateX(250px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+}
+
+
+@keyframes earthOrbit {
+    from { transform: rotate(0deg) translateX(110px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(110px) rotate(-360deg); }
+}
+@keyframes jupiterOrbit {
+    from { transform: rotate(0deg) translateX(160px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(160px) rotate(-360deg); }
+}
+
+

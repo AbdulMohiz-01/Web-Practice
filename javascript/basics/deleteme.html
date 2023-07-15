@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 100px;
+            padding: 0px;
+            background-image: url("https://images.pexels.com/photos/374918/pexels-photo-374918.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-size: cover;
+        }
+        div{
+            position: relative;
+            animation: jumping 4s ease-in-out 0s infinite ;
+            width: 80px;
+            background-color: rgba(137, 43, 226, 0.40);
+            border-radius: 50px;
+            padding: 10px;
+            margin: 1px 0px;
+            transition: width 0.5s, border 0.5s;
+        }
+        @keyframes jumping {
+            0%{
+                left: 0px;
+                rotate: 0deg;
+                top: 0px;
+            }
+            25%{
+                top: 0px;
+                left: 200px;
+                rotate: 90deg;
+            }
+            50%{
+                left: 200px;
+                top: 200px;
+                rotate: 180deg;
+            }
+            75%{
+                top: 200px;
+                left: 0px;
+                rotate: 270deg;
+            }
+            100%{
+                top: 0px;
+                rotate: 360deg;
+            }
+            
+            /* 100%{
+                rotate: 360deg;
+                /* left: 200px; */
+            /* } */
+        }
+        .sum{
+            background-color: rgba(165, 42, 42, 0.40);
+        }
+        .sub{
+            background-color: rgba(128, 255, 0, 0.40);
+        }
+        .product{
+            background-color: rgba(100, 148, 237, 0.40);
+        }
+        div:hover{
+            width: 2000px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="sum">sum</div>
+    <div class="product">product</div>
+    <div class="sub">sub</div>
+    <div class="divide">divide</div>
+</body>
+</html>

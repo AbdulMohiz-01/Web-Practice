@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox Website</title>
+    <style>
+        body{
+            
+            margin: 0;
+            padding: 0px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .main{
+            display: flex;
+            padding: 2px;
+        }
+        .content{
+            width: 33%;
+            border:1px solid grey;
+            border-radius: 10px;
+            margin: 50px;
+            
+            
+        }
+        .content:hover{
+           border-bottom-style: groove;
+        }
+        img{
+            width: 100%;
+            border-radius: 10px 10px 0px 0px;
+        }
+        h2{
+            text-align: center;
+            font-size: 30px;
+            padding: 10px;
+        }
+        .text{
+                margin: 30px;
+                text-align: justify;
+                font-size: large;
+                padding: 10px;
+        }
+        button{
+            padding:20px;
+            margin-left: 60px;
+            margin-right: 60px;
+            margin-bottom: 30px;
+            width: 75%;
+            border: 0px;
+            background-color: lightblue;
+
+        }
+        button:hover{
+            background-color: lightseagreen;
+        }
+    </style>
+
+</head>
+<body> 
+    <header>
+        <h1>PLANET EARTH</h1>
+    </header>
+    <main class="main">
+        <div class="content">
+            <img src="https://images.pexels.com/photos/247431/pexels-photo-247431.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Animal image">
+            <h2>Save Animals</h2>
+            <div class="text">
+                Wildlife traditionally refers to undomesticated animal species, but has come to include all organisms that grow or live wild in an area without being introduced by humans. Wildlife was also synonymous to game: those birds and mammals that were hunted for sport...
+            </div>
+            <a class="button" href="https://en.wikipedia.org/wiki/Wildlife" target=_blank><button>Read More!</button></a>
+        </div>
+        <div class="content">
+            <img src="https://images.pexels.com/photos/33109/fall-autumn-red-season.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tree picture">
+            <h2>Plant Trees</h2>
+            <div class="text">Tree-planting is the process of transplanting tree seedlings, generally for forestry, land reclamation, or landscaping purpose. It differs from the transplantation of larger trees in arboriculture, and from the lower cost but slower and less reliable distribution of tree seeds... </div>
+            <a href="https://en.wikipedia.org/wiki/Tree_planting" target=_blank><button>Get Info!</button></a>
+        </div>
+        <div class="content">
+            <img src="best.jpg" alt="Ocean picture">
+            <h2>Clean Ocean</h2>
+            <div class="text">The Ocean Cleanup is a nonprofit engineering environmental organization based in the Netherlands, that develops technology to extract plastic pollution from the oceans and intercept it in rivers before it can reach the ocean...</div>
+            <a href="https://en.wikipedia.org/wiki/The_Ocean_Cleanup" target=_blank><button>Read More!</button></a>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Classes Concept</title>
+    </head>
+    <body>
+        <h1>This is class Introduction and Arrays</h1>
+        <!-- <script src="Arrays.js"></script> -->
+        <script src="Hoisting.js"></script>
+        <script>
+            // // Method one of making class
+            // //___________________________________________
+            // class Product{
+            //     constructor(productName, productId){
+            //         this.productName = productName;
+            //         this.productId = productId;
+            //     }
+            // }
+            // let charger = new Product('charger','C123');
+            // // _____________________________________________
+
+            // Method 2 Of making Class
+            // const Product1 = class {
+            //     constructor(productName, productId) {
+            //         this.productName = productName;
+            //         this.productId = productId;
+            //     }
+            //     get getChairName() {
+            //         return this.productName;
+
+            //     }
+            //     set setChairName(name) {
+            //         this.productName = name;
+            //     }
+            // }
+            // let chair = new Product1('chair', 'C1233');
+            // ____________________________________________________
+
+            // ***************** INHERITANCE ****************
+            // class Product{
+            //     constructor(productName){
+            //         this.productName = productName;
+            //     }
+            // }
+            // //child class
+            // class Furniture extends Product{
+            //     constructor(productName){
+            //         super(productName);
+            //     }
+            // }
+            // //Making Object Of Both
+            // let product = new Product('Kit');
+            // let furniture = new Furniture('Chair');
+
+            // _______________________________________________ MORE EXAMPLES
+            class Information {
+                constructor(name) {
+                    this.name = name
+                }
+                infoFun = function () {
+                    console.log('Info Function');
+                }
+            }
+            class Account extends Information {
+
+                constructor(name, accId) {
+                    super(name)
+                    this.accId = accId
+                }
+                accFun = function () {
+                    console.log('From Account Class');
+                }
+            }
+            class Bank extends Account {
+                constructor(name, accId, balance) {
+                    super(name, accId)
+                    this.balance = balance;
+                }
+                bankFun = function () {
+                    console.log('From Bank Class');
+                }
+            }
+            const person1 = new Bank('Ali', '123', 4000);
+
+        </script>
+    </body>
+</html>

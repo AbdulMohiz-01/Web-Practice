@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: burlywood;
+        }
+        div{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 700;
+            font-size: 50px;
+            display: block;
+            position: absolute;
+            margin: 200px;
+            padding: 100px;
+            border-radius: 50%;
+            color: burlywood;
+            background-color: blueviolet;
+            animation: bouncing 0.5s ease 0.5s infinite alternate both;
+        }
+        @keyframes bouncing {
+            0%{
+                bottom: 0px;
+                /* color:rgb(171, 81, 255); */
+                border-radius: 60%;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+            }
+            100%{
+                bottom: 90px;
+                /* color: blueviolet; */
+                background-color: rgb(181, 101, 255);
+                box-shadow: 0 70px 70px rgba(0, 0, 0, 0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>HELLO</div>
+</body>
+</html>

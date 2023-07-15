@@ -1,0 +1,19 @@
+*{
+   background-color: black;
+}
+h1{
+    background-color:yellow;
+    font-style: italic;
+    text-align: center;
+    font-size: 300%;
+}
+h2 span{
+    color: green;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.attributes{
+    color: yellow;
+    font-weight: bold;
+    
+}
+

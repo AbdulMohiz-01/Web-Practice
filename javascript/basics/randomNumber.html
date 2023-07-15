@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Generator</title>
+</head>
+<body>
+    <p>Lower Limit: <input type="number" name="lowerLimit" id="lowerLimit"></p>
+    <p>Upper Limit: <input type="number" name="upperLimit" id="upperLimit"></p>
+    <p class="result" id="result"></p>
+    <button id="btn" >Generate</button>
+    <script>
+        let genBtn = document.querySelector('button');
+        genBtn.addEventListener('click', generateRandomNo);
+        function generateRandomNo(){
+            var lowerL = Number(document.getElementById('lowerLimit'));
+            var upperL = Number(document.getElementById('upperLimit'));
+            console.log(lowerL+" "+upperL);
+            // document.getElementById('btn').textContent = ;
+        }
+    </script>
+
+</body>
+</html>

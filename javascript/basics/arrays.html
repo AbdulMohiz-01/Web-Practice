@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+    <script>
+        let a = [1,2,3,4,5];
+        let b = [1,2,3,4,5];
+        let c = [];
+        for(let i=0;i<a.length;i++){
+            c[i] = a[i] + b[i];
+        }
+        console.log(c)
+
+        // objects
+        
+        let animal = {
+           
+        };
+        let owner = {
+            animal
+        };
+        
+        animal['name'] = prompt("Enter Animal name");
+        let legs = prompt("Enter "+animal.name +" Legs: ");
+        animal['legs'] = parseInt(legs);
+        owner['name'] = prompt("Enter Owner name: ");
+        alert(animal.name+" has "+animal.legs+" legs, whose owner is Ms."+owner.name);
+        console.log(owner.animal.name);
+        owner.animal.name = null;
+        console.log(owner.animal.name);
+        console.log(animal.name);
+    </script>
+</body>
+</html>

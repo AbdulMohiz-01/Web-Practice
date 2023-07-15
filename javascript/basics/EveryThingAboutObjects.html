@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Objects</title>
+        <style>
+            body {
+                background-image: url("https://images.pexels.com/photos/397857/pexels-photo-397857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            h1 {
+                color: white;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                text-align: center;
+                font-size: 50px;
+                font-weight: 800;
+                letter-spacing: 20px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WOLF</h1>
+    </body>
+    <script>
+        // method 1 of making objects { likely = 1 }
+        // let animal = {
+        //     name:'dog',
+        //     legs:3
+        // };
+        // console.log(animal.name)
+
+        // method 2 of making objects { likely = 2 } this is also calle 'Factory Function'
+        // this is a normal fucntion
+        // function makeAnimal(name, legs){
+        //     return{
+        //         name: name,
+        //         legs: legs,
+        //         colorBlind: function(){
+        //             console.log(name+" is not color Blind");
+        //         }
+
+        //     };
+        // }
+
+        // calling make aninal fuctions whenever needed
+        // let array = [];
+        // for(let i = 0; i < 5; i++){
+        //     array[i] = makeAnimal(prompt('Enter name of animal'), Number(prompt("Enter legs: ")));
+        //     console.log(array[i].name+ " "+ array[i].legs);
+        // }
+        // const factoryObject = makeAnimal();
+
+        // this is a constructor function
+        //     const ConstructorFunction = new Function('name', `{
+        //     this.name = name;
+        //     this.speak = function(){
+        //         console.log(name+" is houting");
+        //     }
+        // }`);
+        //     const objOfCF = new ConstructorFunction('Lion');
+        // objOfCF.speak();
+
+
+        // method 3 or Constructure Function {likely = 2}
+
+        // function Animal(name){
+        //     this.name = name;
+        //     this.speak = function(){
+        //         console.log(name+" is houting");
+        //     }
+        // }
+        // makeing object
+
+        // const dog = new Animal('Dog');
+        // console.log(dog.name);
+        // delete dog.name;
+        // dog.bark = function(){
+        //     console.log("barking");
+        // }
+        // dog.speak();
+        // dog.bark();
+
+
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        //              A S S I N G I N G  -  O B J E C T S
+        // ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+        // function Courses(courseName) {
+        //     this.name = courseName;
+        //     this.enroll = function () {
+        //         console.log('Enrolled! ***');
+        //     }
+        // }
+        // function Assign(asname) {
+        //     this.aname = asname;
+        //     this.assign = function () {
+        //         console.log('Assigned! ***');
+        //     }
+        // }
+        // const course1 = new Courses('Maths');
+        // const assign = new Assign('cal');
+        // course1.enroll();
+        // mathod 1 of assiging object to other till #111
+        // const course2 = {
+        //     ... course1,assign
+        // };
+        // course2.name = 'English';
+
+        // method 2 till # 115
+
+        // const course2 = Object.assign({}, course1, assign);
+
+        // method 3 which is for-of loop
+        // const c3 = {};
+        // for (let keyValue of Object.keys(course1)) {
+        //     c3[keyValue] = course1[keyValue]
+        // }
+        // now for in loop
+        // for (let key in course1) {
+        //     c3[key] = course1[key]
+        // }
+
+        // =======================================================================
+        // Object Exercise
+        // =======================================================================
+
+        function ItemInfo(itemName, price, discount, itemCode) {
+            this.itemName = itemName;
+            this.price = price;
+            this.discount = discount;
+            this.itemCode = itemCode;
+        }
+        const item1 = new ItemInfo('Doodh', 130, 2, 'A312');
+    </script>
+</html>

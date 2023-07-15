@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="paymentdesign.css">
+</head>
+<body>
+    <form action="">
+        <h1>Payment Form</h1>
+        <h2><span>Fill the given form</span></h2>
+        
+        <p class="attributes">Name: <input type="text" class="attributes" name="name" id="name" required></p>
+        <fieldset>
+            <legend class="attributes">Gender</legend>
+            <p class="attributes">Male <input type="radio" class="attributes" name="gender" id="gender"> Female <input type="radio" name="gender" id="gender" required></p>
+        </fieldset>
+        <p class="attributes">Email: <input type="email" class="attributes" name="email" id="email" required></p>
+        <p class="attributes">Contact Number <input type="number" class="attributes" name="contactNo" id="contactNo" required></p>
+        <br><br><br>
+        <h2> <span>Payment Method</span></h2>
+        <select name="paymentTyper" id="paymentTyper" class="attributes">
+            <option value="">--Select payment typer--</option>
+            <option value="Easypasa">EasyPasa</option>
+            <option value="JazzCash">JazzCash</option>
+            <option value="CreditCard">Credit Card</option>
+        </select>
+        <p class="attributes">Card Number: <input type="number" class="attributes" name="cardNo" id="cardNo"></p>
+        <p class="attributes">Expiration Date <input type="date" class="attributes" name="date" id="date" class="attributes"></p>
+        <p class="attributes">Card Pin <input type="password" class="attributes" name="pin" id="pin"> </p>
+        <input type="submit" value="Pay Now" class="attributes">
+    </form>
+</body>
+</html>
